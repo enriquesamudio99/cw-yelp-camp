@@ -51,6 +51,12 @@ body {
     font-size: 1rem;
 }
 
+@media (min-width: 1200px) {
+    .landing-page__body {
+        height: 100vh;
+    }
+}
+
 a {
     text-decoration: none;
 }
@@ -116,8 +122,43 @@ ul {
     background-size: cover;
 }
 
+@media (min-width: 1200px) {
+    .landing-page__bg {
+        margin-top: 0;
+        width: 661px;
+        height: 100%;
+        background-image: url(../img/hero-image.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
+
 .landing-page__main {
     margin-top: 2.5rem;
+}
+
+@media (min-width: 1200px) {
+    .landing-page__main {
+        margin-top: 8rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .landing-page__container {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (min-width: 1200px) {
+    .landing-page__content {
+        width: 479px;
+    }
 }
 
 .landing-page__title {
