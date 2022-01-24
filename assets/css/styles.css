@@ -99,11 +99,26 @@ ul {
     font-weight: 700;
     border-radius: 5px;
     text-align: center;
+    border: 1px solid transparent;
 }
 
 .btn--dark {
     background-color: var(--dark);
     color: #ffffff;
+}
+
+.btn--dark:hover {
+    background-color: #222222;
+}
+
+.btn--light {
+    background-color: transparent;
+    border: 1px solid #dadada;
+    line-height: 1.25rem;
+}
+
+.btn--light:hover {
+    background-color: #F9F6F1;
 }
 
 .btn--block {
@@ -326,6 +341,18 @@ ul {
     padding: 2.25rem;
 }
 
+@media (min-width: 768px) {
+    .welcome__container {
+        padding: 4.25rem 3.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .welcome__content {
+        width: 408px;
+    }
+}
+
 .welcome__title {
     font-size: 2.25rem;
     line-height: 2.438rem;
@@ -337,6 +364,14 @@ ul {
     font-size: 1.125rem;
     line-height: 150%;
     color: var(--gray);
+}
+
+@media (min-width: 768px) {
+    .welcome__form {
+        display: grid;
+        grid-template-columns: 255px 109px;
+        gap: 1rem;
+    }
 }
 
 .welcome__input {
@@ -378,4 +413,59 @@ ul {
     height: 1px;
     background-color: var(--gray);
     margin-top: -3px;
+}
+
+.campgrounds {
+    margin-top: 2.5rem;
+    margin-bottom: 5rem;
+}
+
+.campgrounds__container {
+    display: grid;
+    gap: 1.25rem;
+}
+
+@media (min-width: 768px) {
+    .campgrounds__container {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (min-width: 1200px) {
+    .campgrounds__container {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+.campground {
+    padding: 0.938rem;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+}
+
+.campground__img {
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.campground__info {
+    margin-top: 1rem;
+}
+
+.campground__title {
+    font-size: 1.125rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+}
+
+.campground__text {
+    margin-top: .5rem;
+    font-size: 1.125rem;
+    line-height: 150%;
+    color: var(--gray);
+}
+
+.campground__btn {
+    margin-top: 1rem;
 }
