@@ -3,33 +3,9 @@
 :root {
     /* Colors */
     --dark: #000000;
-    --gray: #595959;
-
-    /* Font Size */
-    
-
-    /* Line Height */
-    
+    --gray: #595959; 
 }
 
-@media (min-width: 768px) {
-    :root {
-        /* Font Size */
-        
-
-        /* Line Height */
-       
-    }
-}
-
-@media (min-width: 1200px) {
-    :root {
-        /* Font Size */
-        
-
-        /* Line Height */
-    }
-}
 
 *,
 *::before,
@@ -53,6 +29,12 @@ body {
 
 @media (min-width: 1200px) {
     .landing-page__body {
+        height: 100vh;
+    }
+}
+
+@media (min-width: 1200px) {
+    .sign-up__body {
         height: 100vh;
     }
 }
@@ -695,4 +677,106 @@ ul {
     object-position: top left;
 }
 
-/* END SEARCH PAGE */
+/* END INDIVIDUAL CAMPGROUND */
+
+/* SIGN UP */
+.sign-up__header {
+    margin-top: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sign-up__back-to {
+    font-size: 1.125rem;
+    line-height: 1.25rem;
+    color: var(--gray);
+}
+
+.sign-up__main {
+    margin-top: 2.5rem;
+}
+
+.sign-up__title {
+    font-size: 2.25rem;
+    line-height: 2.438rem;
+}
+
+.sign-up__form {
+    margin-top: 2.25rem;
+    display: grid;
+    gap: 1.5rem;
+}
+
+.input-group__label {
+    display: block;
+    font-size: 1.125rem;
+    line-height: 1.25rem;
+    color: var(--gray);
+}
+
+.input-group__input {
+    margin-top: 1rem;
+    width: 100%;
+    padding: 1.125rem 1.5rem;
+    font-family: inherit;
+    font-size: 1.125rem;
+    line-height: 150%;
+    color: var(--gray);
+    background-color: #F7F7F7;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+.input-group__input:focus {
+    border: 1px solid #595959;
+    outline: none;
+}
+
+.sign-up__help {
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 1.125rem;
+    line-height: 150%;
+    color: var(--gray);
+}
+
+.sign-up__help-span {
+    color: #009FE0;
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.sign-up__review {
+    margin-top: 2.5rem;
+    background-color: #F9F6F1;
+    padding: 3.125rem 0;
+}
+
+.sign-up__review-blockquote {
+    font-size: 1.5rem;
+    line-height: 2.438rem;
+    font-weight: 700;
+}
+
+.sign-up__review-info {
+    margin-top: 1.625rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.sign-up__review-name {
+    font-size: 1rem;
+    line-height: 1.063rem;
+    font-weight: 700;
+}
+
+.sign-up__review-span {
+    display: block;
+    margin-top: 0.375rem;
+    font-weight: 400;
+    color: var(--gray);
+}
+
+/* END SIGN UP */
