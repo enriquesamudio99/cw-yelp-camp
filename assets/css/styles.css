@@ -55,6 +55,16 @@ ul {
     list-style: none;
 }
 
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+
+input[type=number] { 
+    -moz-appearance: textfield; 
+}
+
 .container {
     width: calc(100% - 2.5rem);
     margin: 0 auto;
@@ -119,6 +129,10 @@ ul {
 /* LANDING PAGE */
 .landing-page__header {
     margin-top: 2.5rem;
+}
+
+.landing-page__logo {
+    display: inline-block;
 }
 
 .landing-page__bg {
@@ -342,7 +356,7 @@ ul {
 @media (min-width: 1200px) {
     .nav__auth {
         flex-direction: row;
-        gap: 0;
+        gap: 1.5rem;
         border-top: 0;
         padding: 0;
         align-items: center;
@@ -353,6 +367,10 @@ ul {
     font-size: 1.125rem;
     line-height: 150%;
     color: var(--gray);
+}
+
+.nav__auth-link--user {
+    font-weight: 700;
 }
 
 .nav__auth-link--alt {
@@ -370,7 +388,6 @@ ul {
         font-weight: 700;
         border-radius: 5px;
         text-align: center;
-        margin-left: 1.438rem;
     }
 
     .nav__auth-link--alt:hover {
@@ -523,6 +540,10 @@ ul {
 
 .footer {
     margin: 5rem 0;
+}
+
+.footer__logo {
+    display: inline-block;
 }
 
 /* END SEARCH PAGE */
@@ -759,6 +780,17 @@ ul {
     border-radius: 5px;
 }
 
+.input-group__input--textarea {
+    resize: none;
+    min-height: 252px;
+}
+
+@media (min-width: 768px) {
+    .input-group__input--textarea {
+        min-height: 219px;
+    }
+}
+
 .input-group__input:focus {
     border: 1px solid #595959;
     outline: none;
@@ -831,3 +863,77 @@ ul {
 }
 
 /* END SIGN UP */
+
+/* ADD CAMPGROUND */
+
+.add-campground__main {
+    margin-top: 2.5rem;
+}
+
+@media (min-width: 1200px) {
+    .add-campground__main {
+        margin-top: 4.25rem ;
+    }
+}
+
+@media (min-width: 768px) {
+    .add-campground__content {
+        width: 534px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .add-campground__content {
+        margin: 0 auto;
+    }
+}
+
+.add-campground__title {
+    font-size: 2.25rem;
+    line-height: 2.438rem;
+}
+
+.add-campground__form {
+    margin-top: 2.25rem;
+    display: grid;
+    gap: 1.5rem;
+}
+
+/* END ADD CAMPGROUND */
+
+/* ADD COMMENT */
+
+.add-comment__main {
+    margin-top: 2.5rem;
+}
+
+@media (min-width: 1200px) {
+    .add-comment__main {
+        margin-top: 4.25rem ;
+    }
+}
+
+@media (min-width: 768px) {
+    .add-comment__content {
+        width: 534px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .add-comment__content {
+        margin: 0 auto;
+    }
+}
+
+.add-comment__title {
+    font-size: 2.25rem;
+    line-height: 2.438rem;
+}
+
+.add-comment__form {
+    margin-top: 2.25rem;
+    display: grid;
+    gap: 1.5rem;
+}
+
+/* END ADD COMMENT */

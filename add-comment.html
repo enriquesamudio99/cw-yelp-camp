@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YelpCamp | Search Page</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="search-page__body">
+
+    <header class="search-page__header container">
+    
+        <nav class="navbar">
+            <a class="navbar__logo" href="./">
+                <img class="navbar__logo-img" src="assets/img/logo.svg" alt="Logo">
+            </a>
+            <button class="navbar__toggler" type="button" id="togglerBtn"></button>
+            <div class="nav__container" id="navContainer">
+                <ul class="nav" id="nav">
+                    <li class="nav__item">
+                        <a class="nav__link" href="./search-page.html">Home</a>
+                    </li>
+                </ul>
+
+                <ul class="nav__auth">
+                    <li class="nav__auth-item">
+                        <a class="nav__auth-link nav__auth-link--user" href="#">johndoe79</a>
+                    </li>
+                    <li class="nav__auth-item">
+                        <a class="nav__auth-link" href="#">Logout</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+
+    <main class="add-comment__main">
+
+        <div class="add-comment__container container">
+
+            <div class="add-comment__content">
+
+                <h1 class="add-comment__title">Add New Comment</h1>
+
+                <form method="get" class="add-comment__form">
+                    <div class="input-group">
+                        <label for="description" class="input-group__label">Description</label>
+                        <textarea class="input-group__input input-group__input--textarea" id="description" placeholder="This was probably the best camp i’ve visited this past year, definitely recommend visiting any time soon."></textarea>
+                    </div>
+                    <a href="#" class="btn btn--dark btn--block input-group__btn">Post Comment</a>
+                </form>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="footer__container container">
+            <a href="./" class="footer__logo">
+                <img src="assets/img/logo.svg" alt="Logo" class="footer__logo-img">
+            </a>
+        </div>
+
+    </footer>
+    
+
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>
